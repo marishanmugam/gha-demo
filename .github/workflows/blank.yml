@@ -1,0 +1,11 @@
+name: Hello world
+on: workflow_dispatch #this is the manual trigger kind of it's event trigger
+jobs:
+  hello: #this is the job name 
+    runs-on: ubuntu-latest #we are specifying where to run runner
+    steps:
+      - name: Hello
+        run: echo 'Welcome to Hello world work flow'
+    
+    
+    
