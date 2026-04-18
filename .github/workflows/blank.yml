@@ -29,6 +29,6 @@ jobs:
     needs: test
     steps:
       - name: Deploy the applications
-        run: echo 'This is the code block deploying the applications"
+        run: echo "This is the code block deploying the applications"
      
     
