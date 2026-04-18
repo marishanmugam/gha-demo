@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test Build
-        run:  echo "This is the test code"
+        run:  echo "This is the test code."
   
      
     
