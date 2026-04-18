@@ -3,8 +3,13 @@ on:
   push:
     branches: 
       - main
-      - develop
-      
+      - feature/pr_demo
+
+  pull_request: 
+    branches: 
+      - main #workflow initited when pr made to the main brnach
+  
+
 #on pushing to any main branch trigger will run #workflow_dispatch --> This is the manual trigger
  #this is the manual trigger kind of it's event trigger
 jobs:
