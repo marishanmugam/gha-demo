@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest #we are specifying where to run runner
     steps:
       - name: Hello
-        run: echo "Welcome to Hello world work flow"
-    
+        run: | # this one line command -->echo "Welcome to Hello world work flow" 
+          echo "This is first command"
+          echo "this is second command" # | --> Using this symbol we can write multiple command
     
     
