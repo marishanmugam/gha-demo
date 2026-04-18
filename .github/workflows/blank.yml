@@ -8,5 +8,17 @@ jobs:
         run: | # this one line command -->echo "Welcome to Hello world work flow" 
           echo "This is first command"
           echo "this is second command" # | --> Using this symbol we can write multiple command
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Building the code
+        run: echo "This is the code block of buldings"
+        
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Build
+        run:  echo "This is the test code"
+  
      
     
