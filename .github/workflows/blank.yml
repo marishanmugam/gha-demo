@@ -1,5 +1,6 @@
 name: Hello world
-on: workflow_dispatch #this is the manual trigger kind of it's event trigger
+on: push #on pushing to any main branch trigger will run #workflow_dispatch --> This is the manual trigger
+ #this is the manual trigger kind of it's event trigger
 jobs:
   hello: #this is the job name 
     runs-on: ubuntu-latest #we are specifying where to run runner
