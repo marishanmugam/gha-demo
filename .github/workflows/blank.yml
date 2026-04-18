@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest #we are specifying where to run runner
     steps:
       - name: Hello
-        run: echo 'Welcome to Hello world work flow'
+        run: echo "Welcome to Hello world work flow"
     
     
     
