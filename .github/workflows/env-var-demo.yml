@@ -1,7 +1,7 @@
 name: Environment variable demo
-on: workflow_dispatch
+on: push
 env:
-  app_env : 'Testing the app'
+  app_env: 'Testing the app'
 
 jobs:
   environment_demo:
