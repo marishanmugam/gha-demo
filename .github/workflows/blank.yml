@@ -28,6 +28,15 @@ jobs:
     steps:
       - name: Building the code
         run: echo "Hello, ${{ secrets.DOCKER_PASSWORD }}"
+
+  build-web-apps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the web code
+        uses: actions/checkout@v4
+      - name: Print index.html
+        run: cat index.html
+    
           
   
         
