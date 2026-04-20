@@ -3,15 +3,20 @@ on:
   push:
     branches: 
       - main
-      - develop
-      
+      - feature/pr_demo
+
+  pull_request: 
+    branches: 
+      - main #workflow initited when pr made to the main brnach
+  
+
 #on pushing to any main branch trigger will run #workflow_dispatch --> This is the manual trigger
  #this is the manual trigger kind of it's event trigger
 jobs:
   hello: #this is the job name 
     runs-on: ubuntu-latest #we are specifying where to run runner
     steps:
-      - name: Hello
+      - name: Hello 
         run: | # this one line command -->echo "Welcome to Hello world work flow" 
           echo "This is first command"
           echo "this is second command" # | --> Using this symbol we can write multiple command
@@ -22,7 +27,11 @@ jobs:
     needs: hello
     steps:
       - name: Building the code
-        run: echo "This is the code block of buldings"
+        run: |
+            echo "Hello, ${{vars.my_name}}"
+            echo "This is the code block of buldings"
+          
+  
         
      
     
