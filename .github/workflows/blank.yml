@@ -27,7 +27,7 @@ jobs:
     needs: hello
     steps:
       - name: Building the code
-        run: echo "Hello, ${{ vars.my_name }}"
+        run: echo "Hello, ${{ vars.MY_NAME }}"
           
   
         
